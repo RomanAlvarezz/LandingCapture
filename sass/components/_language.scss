@@ -1,0 +1,48 @@
+@use '../base/colors' as c;
+
+.language {
+    &__container {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    &__divider {
+        width: 1px;
+        height: 15px;
+        border-radius: 5px;
+        background-color:  c.$White;
+    }
+
+    &__btn {
+        position: relative;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        color: c.$White-hover;
+        font-weight: 400;
+        cursor: pointer;
+        transition: all 200ms ease-in-out;
+
+        &:hover {
+            color: c.$Blue;
+        }
+
+        &::after {
+            content: '';
+            border-radius: 10px;
+            display: block;
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 0;
+            height: 1.5px;
+            background-color: c.$Blue;
+            transition: all 200ms ease-in-out;
+        }
+
+        &:hover::after {
+            width: 100%;
+        }
+    }
+}

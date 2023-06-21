@@ -1,0 +1,57 @@
+@use "../base/colors" as c;
+
+.video {
+  &__container {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-size:cover ;
+    background: linear-gradient(
+      142deg,
+      #0d0e0fa3,
+      #072146a3,
+    );
+  }
+
+  &__title {
+    z-index: 5;
+    margin: 0 20px;
+    width: 100%;
+    max-width: 1120px;
+    color: c.$White;
+    border-left: solid 5px c.$Blue;
+    padding-left: 30px;
+    margin-bottom: 70px;
+    font-size: 26px;
+    font-weight: 700;
+
+    @media (min-width: 750px) {
+      font-size: 46px;
+    }
+
+    @media (min-width: 1000px) {
+      font-size: 56px;
+    }
+  }
+
+  &__bg {
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+  &__logo {
+    // z-index: -1;
+    position: absolute;
+    top: -55px;
+    left: -85px;
+    opacity: 0.45;
+  }
+}

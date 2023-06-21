@@ -1,0 +1,34 @@
+@use '../base/colors' as c;
+
+.contact {
+    height: 240px;
+    background: c.$White-hover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 30px;
+
+    &__title {
+        font-size: 46px;
+        font-weight: 600;
+    }
+
+    &__button {
+        display: inline-block;
+        text-decoration: none;
+        color: c.$Green;
+        max-width: 153px;
+        border: 2px solid c.$Green;
+        font-weight: 600;
+        font-size: 20px;
+        padding: 12px 20px;
+        transition: all 200ms ease;
+
+        &:hover {
+            color: c.$White;
+            background-color: c.$Green;
+        }
+    }
+}

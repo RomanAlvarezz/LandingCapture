@@ -1,0 +1,57 @@
+@use '../base/colors' as c;
+
+.about {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    @media (min-width: 850px) {
+        align-items: center;
+        flex-direction: row;
+        padding: 20px;
+    }
+
+
+    &__container {
+        padding: 90px 0;
+        background-color: c.$Black;
+        color: c.$White;
+    }
+
+    &__txt {
+        @media (min-width: 850px) {
+            width: 50%;
+        }
+    }
+
+    &__actives {
+        font-size: 60px;
+        font-weight: 700;
+        margin-bottom: 40px;
+    }
+
+    &__letter {
+        color: c.$Blue;
+    }
+
+    &__subtitle {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 40px;
+    }
+
+    &__slider__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media (min-width: 850px) {
+            width: 50%;
+        }
+    }
+
+}

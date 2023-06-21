@@ -1,0 +1,59 @@
+@use '../base/mixins' as m;
+
+.investment {
+    @include m.section-info(reverse, url(../../assets/investment-bg.svg));
+}
+
+/*
+.investment {
+    &__container {
+        background-position: right center;
+        background-repeat: no-repeat;
+        scroll-margin-top: 100px;
+        padding: 90px 30px;
+        background-color: c.$Black;
+        color: c.$White;
+        
+        @media (min-width: 980px){
+            background-image: url(../../assets/investment-bg.svg);
+        }
+    }
+
+    margin: 0 auto;
+    max-width: 1400px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 'text'
+                         'image';
+    align-items: center;
+    justify-items: center;
+    gap: 40px;
+
+    @media (min-width: 980px){
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 'text image';
+    }
+
+    &__txt {
+        grid-area: text;
+        max-width: 660px;
+        padding-left: 15px;
+        //order: 1;
+        @media (min-width: 980px){
+            padding-left: 50px;
+        }
+    }
+
+    &__img {
+        grid-area: image;
+        display: block;
+        width: 100%;
+        max-width: 540px;
+        
+        @media (min-width: 980px){
+            margin-right: -50px;
+        }
+    }
+    
+}
+*/

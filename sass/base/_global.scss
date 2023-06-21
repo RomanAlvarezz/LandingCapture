@@ -1,0 +1,59 @@
+@use "colors" as c;
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 40px;
+  color: c.$Blue;
+  margin-bottom: 40px;
+
+  @media (min-width: 480px) {
+    font-size: 56px;
+  }
+}
+
+.text {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.button {
+  max-width: 130px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 18px;
+  font-family: "Red Hat Display", sans-serif;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: c.$Green;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  line-height: 27px;
+  transition: all 200ms ease;
+
+  &:hover {
+    opacity: 0.8;
+    gap: 15px;
+  }
+
+  img{
+    width: 20px;
+  }
+}

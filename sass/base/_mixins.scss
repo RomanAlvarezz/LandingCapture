@@ -1,0 +1,68 @@
+@use "../base/colors" as c;
+
+@mixin section-info($flow, $bg-url) {
+  &__container {
+    @if $flow == reverse {
+      background-position: right center;
+    } @else {
+      background-position: left center;
+    }
+    background-repeat: no-repeat;
+    padding: 90px 30px;
+    background-color: c.$Black;
+    color: c.$White;
+
+    @media (min-width: 980px) {
+      background-image: $bg-url;
+    }
+  }
+
+  margin: 0 auto;
+  max-width: 1400px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "text"
+    "image";
+  align-items: center;
+  justify-items: center;
+  gap: 40px;
+
+  @media (min-width: 980px) {
+    grid-template-columns: 1fr 1fr;
+
+    @if $flow == reverse {
+      grid-template-areas: 'text image';
+    } @else {
+      grid-template-areas: 'image text';
+    }
+  }
+
+  &__txt {
+    grid-area: text;
+    max-width: 660px;
+    padding-left: 15px;
+    order: 1;
+    @media (min-width: 980px) {
+
+      @if $flow == reverse {
+        padding-left: 50px;
+      } @else {
+        padding-left: 0;
+      }
+    }
+  }
+
+  &__img {
+    grid-area: image;
+    display: block;
+    width: 100%;
+    max-width: 540px;
+
+    @if $flow == reverse {
+      @media (min-width: 980px){
+        margin-right: -50px;
+    }
+    }
+  }
+}

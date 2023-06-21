@@ -1,0 +1,15 @@
+{
+  "name": "landingcapture",
+  "version": "1.0.0",
+  "description": "Esta es una onepage para una agencia de hoteles",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch sass/main.scss css/main.css"
+  },
+  "author": "Roman Alvarez",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  }
+}

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="icon" href="./assets/rel-icon-pequeno.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Capture</title>
+  </head>
+  <body>
+    <section class="header__container">
+      <header class="header">
+        <img class="header__logo" src="/assets/capture-logo.svg" alt="logo" />
+        <nav class="nav">
+          <a class="nav__link" href="#">home</a>
+          <a class="nav__link" href="#about">about</a>
+          <a class="nav__link" href="#contact">contact</a>
+          <div class="language__container">
+            <button class="language__btn">EN</button>
+            <span class="language__divider"></span>
+            <button class="language__btn">ES</button>
+          </div>
+        </nav>
+        <img
+          class="header__btn"
+          src="./assets/menu-icon.svg"
+          alt="menu button"
+        />
+        <nav class="nav__mobile">
+          <a id="link" class="nav__link" href="#">home</a>
+          <a class="nav__link" href="#about">about</a>
+          <a class="nav__link" href="#">contact</a>
+          <div class="language__container">
+            <button class="language__btn">EN</button>
+            <span class="language__divider"></span>
+            <button class="language__btn">ES</button>
+          </div>
+        </nav>
+      </header>
+    </section>
+
+    <a href="#" class="arrow__container">
+      <img class="arrow" src="./assets/arrow-up.svg" alt="arrow up icon">
+    </a>
+
+    <section class="video__container">
+      <img class="video__logo" src="./assets/video-logo.svg" alt="video logo" />
+      <h1 class="video__title">
+        Defining and executing capital strategies & solutions in real state
+      </h1>
+      <video class="video__bg" autoplay muted loop>
+        <source src="./assets/video.mp4" type="video/mp4" />
+      </video>
+    </section>
+
+    <section class="about__container" id="about">
+      <div class="about">
+        <article class="about__txt">
+          <h1 class="title">Who we are</h1>
+          <p class="text">
+            Capture is a real estate investment management boutique, creating,
+            enhancing and driving opportunities in the Iberian real estate
+            market.
+          </p>
+          <h2 class="about__actives">
+            €<span id="about-number">80</span
+            ><span class="about__letter">M</span>
+          </h2>
+          <h3 class="about__subtitle">Assets under Managment</h3>
+          <button class="button">
+            Read More
+            <img
+              class="about__arrow"
+              src="./assets/bi_arrow-down.svg"
+              alt="arrow"
+            />
+          </button>
+        </article>
+        <article class="about__slider__container">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="slider__card" id="slide1"></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider__card" id="slide2"></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider__card" id="slide3"></div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev">
+              <img src="./assets/arrow.png" alt="arrow prev" />
+          </div>
+          <div class="swiper-button-next">
+              <img src="./assets/arrow.png" alt="arrow next" />
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="asset__container">
+      <div class="asset">
+        <img class="asset__img" src="./assets/asset.png" alt="asset image">
+
+        <article class="asset__txt">
+          <h1 class="title">Asset <br>Management</h1>
+          <p class="text">Maximizing the value across our portfolio through the combination of high-level strategic direction with skilled active asset management focused on creating the right projects that would capture the highest returns of an asset by maximizing its liquidity.
+          </p>
+          <button class="button">
+            Read More
+            <img
+              class="asset__arrow"
+              src="./assets/bi_arrow-down.svg"
+              alt="arrow"
+            />
+          </button>
+        </article>
+      </div>
+    </section>
+
+    <section class="investment__container">
+      <div class="investment">
+        <article class="investment__txt">
+          <h1 class="title">Investment<br>Management</h1>
+          <p class="text">Targeting opportunities in the different real estate sectors in Iberia with focus on Core Plus and Value-Add strategies including greenfield developments where the skills of the team can define a realistic sustainable strategy to extract the best value for our investors. <br><br>
+            Our investors are local Family Offices and Institutional Investors that are looking for the benefits of a larger investment manager coupled with the flexibility and quality time that Capture can provide to fulfill its expectations.
+          </p>
+          <button class="button">
+            Read More
+            <img
+              class="investment__arrow"
+              src="./assets/arrow.png"
+              alt="arrow"
+            />
+          </button>
+        </article>
+        
+        <img class="investment__img" src="./assets/investment.png" alt="asset image">
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h1 class="contact__title">Let's get in touch</h1>
+      <a class="contact__button" href="mailto:alvarezroman150@gmai.com">Contact Us</a>
+    </section>
+
+    <div class="footer__container">
+      <footer class="footer">
+        <div class="footer__info">
+          <img class="footer__logo" src="./assets/footer-logo.svg" alt="capture logo">
+          <p class="footer__description">
+            Capture is a real estate investment management boutique, creating, enhancing and driving opportunities in the Iberian real estate market.
+          </p>
+        </div>
+        <div class="footer__contact">
+          <h3 class="footer__contact__title">Get in touch</h3>
+          <a class="footer__email" href="mailto:alvarezroman150@gmai.com">
+            <img class="footer__email__icon" src="./assets/email-icon.svg" alt="email icon">
+            <span class="footer__email__text">enquiries@capture.re</span>
+          </a>
+        </div>
+        <div class="footer__location">
+          <h3 class="footer__location__title">Adress</h3>
+          <a class="footer__map" target="_blank" href="https://goo.gl/maps/qxgGAbZ3ak9wmi6S8">
+            <img class="footer__map__icon" src="./assets/location-icon.svg" alt="email icon">
+            <span class="footer__map__text">
+              Paseo de la Castellana,200<br>
+              28046, Madrid <br>
+              Madrid, Spain
+            </span>
+          </a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        speed: 500,
+        loop: true,
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'bullets',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>

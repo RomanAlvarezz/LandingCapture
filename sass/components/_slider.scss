@@ -1,0 +1,86 @@
+@use '../base/colors' as c;
+
+.about__slider__container{
+  position: relative;
+}
+
+.slider__card {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+#slide1{
+  background-image: url(../../assets/who-we-are-1.png);
+  background-size: cover;
+  background-position: center center;
+}
+
+#slide2{
+  background-image: url(../../assets/who-we-are-2.png);
+  background-size: cover;
+  background-position: center center;
+}
+
+#slide3{
+  background-image: url(../../assets/who-we-are-3.png);
+  background-size: cover;
+  background-position: center center;
+}
+
+.swiper {
+  width: 100%;
+  max-width: 540px;
+  height: 400px;
+  position: relative;
+
+  @media (min-width: 600px) {
+    height: 600px;
+  }
+}
+
+div[class^="swiper-button"]::after {
+  display: none;
+}
+
+div[class^="swiper-button"] {
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div[class^="swiper-button"] img {
+  width: 18px;
+}
+
+.swiper-button-next {
+  z-index: 5;
+  position: absolute;
+  top: calc(100% + 41.5px);
+  right: calc(50% - 54px);
+}
+
+.swiper-button-prev {
+  z-index: 5;
+  position: absolute;
+  top: calc(100% + 41.5px);
+  left: calc(50% - 54px);
+  transform: rotate(180deg);
+}
+
+.swiper-pagination {
+  z-index: 5;
+  padding: 25px;
+  transform: translateY(100%);
+}
+
+.swiper-pagination-bullet {
+  border: solid c.$White 2px;
+}
+
+.swiper-pagination-bullet-active {
+  border: none;
+  background-color: c.$Green;
+}
